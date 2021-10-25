@@ -88,6 +88,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 60px;
 }
 
 .presentation__catchword{
@@ -111,6 +112,7 @@ h1 {
     border: transparent;
     transition-property: transform;
     transition-duration: 1000ms;
+    margin-top: -21px;
 }
 
 .presentation button:hover{
@@ -118,5 +120,115 @@ h1 {
           transform: scale(1.05);
     -webkit-box-shadow: 6px 6px 6px 2px grey;
           box-shadow: 6px 6px 6px 2px grey;
+          -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+          
 
 }
+
+/****operation****/
+
+.operation {
+    height: 430px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    background: white;
+  }
+
+  
+  
+  .operation .order_operation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  .operation .order_operation button {
+    width: 80%;
+    height: 60px;
+    border-radius: 1.3em;
+    border: transparent;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-bottom: 50px;
+    font-size: 1em;
+    -webkit-box-shadow: 1px 3px 6px 2px rgba(12, 11, 11, 0.2);
+            box-shadow: 1px 3px 6px 2px rgba(12, 11, 11, 0.2);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 1000ms;
+            transition-duration: 1000ms;
+    position: relative;
+  }
+  
+  .operation .order_operation button:hover {
+    -webkit-filter: brightness(110%);
+            filter: brightness(110%);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-box-shadow: 1px 3px 6px 2px grey;
+            box-shadow: 1px 3px 6px 2px grey;
+    background-color: rgb(228, 212, 243);
+  }
+  
+  .operation .order_operation button .fas {
+    padding: 0 10px;
+  }
+  
+  .operation .order_operation .operation__step_1::before {
+    content: "1";
+    font-size: 17px;
+    position: absolute;
+    height: 22px;
+    width: 24px;
+    left: -3px;
+    color: white;
+    border-radius: 2em;
+    background-color: #9356dc;
+  }
+  
+  .operation .order_operation .operation__step_2::before {
+    content: "2";
+    font-size: 17px;
+    position: absolute;
+    height: 22px;
+    width: 24px;
+    left: -3px;
+    color: white;
+    border-radius: 2em;
+    background-color: #9356dc;
+  }
+  
+  .operation .order_operation .operation__step_3::before {
+    content: "3";
+    font-size: 17px;
+    position: absolute;
+    height: 22px;
+    width: 24px;
+    left: -3px;
+    color: white;
+    border-radius: 2em;
+    background-color: #9356dc;
+  }
