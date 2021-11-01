@@ -331,9 +331,37 @@ p.block_menu_card_location {
   margin-right: -15px;
   list-style-type: none;
   color: #e9e9e9;
+  
 }
 
-footer .footer_link ul li a{
+footer li a{
   text-decoration:none ;
   color: #f3eaea;
 }
+
+h5{
+  font-size: 17px;
+}
+/**** menu pages ****/ 
+.banner img{
+  width: 100%;
+  height: 100%;
+}
+ .back .fas{
+   color: black;
+ }
+.select_menu{
+  margin-top: -5rem;
+  padding-top: 0.8em;
+  background-color: #f6f6f6;
+  border-radius: 2rem 2rem 0 0;
+  z-index: 1;
+  position: relative;
+  
+}
+  
+.select_menu h2{
+  font-family: 'Shrikhand', cursive;
+}
+
+/***header****/ 
