@@ -337,10 +337,11 @@ p.block_menu_card_location {
 footer li a{
   text-decoration:none ;
   color: #f3eaea;
+  font-family:'Roboto', sans-serif ; 
 }
 
 h5{
-  font-size: 17px;
+  font-size: 19px;
 }
 /**** menu pages ****/ 
 .banner img{
@@ -351,10 +352,10 @@ h5{
    color: black;
  }
 .select_menu{
-  margin-top: -5rem;
-  padding-top: 0.8em;
-  background-color: #f6f6f6;
-  border-radius: 2rem 2rem 0 0;
+  margin-top: -33px;
+  padding-top: 5px;
+  background-color: white;
+  border-radius: 30px 30px 0 0;
   z-index: 1;
   position: relative;
   
@@ -365,3 +366,59 @@ h5{
 }
 
 /***header****/ 
+
+.button_header{
+  position: absolute;
+  top: 29px;
+  right: 12px;
+  bottom: 0;
+  margin: auto 15px;
+  height: 22px;
+  width: 21px;
+  font-size: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.button_header:hover .far, .button_header .fas {
+  display: none;
+}
+
+.button_header:hover .fas {
+  display: block;
+  color: #7126a3e7;
+}
+
+.select_menu_card{
+  margin-top: 0px;
+  padding: -1px 20px;
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-gap: 40px;
+}
+
+.menu_part{
+  display: grid;
+  grid-gap: 14px;
+}
+
+.select_menu_card .menu_part h4{
+  position: relative;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  color: #4f5252;
+}
+
+.select_menu_card .menu_part h4::after{
+  content: "";
+  width: 3rem;
+  height: 0.25rem;
+  background-color: #99E2D0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
