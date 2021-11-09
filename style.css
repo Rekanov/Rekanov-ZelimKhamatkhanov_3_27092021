@@ -422,3 +422,286 @@ h5{
   bottom: 0;
 }
 
+.select_menu_card .menu_part .btn-delay0,
+.select_menu_card .menu_part .btn-delay1,
+.select_menu_card .menu_part .btn-delay2 {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  border-radius: 15px;
+  text-overflow: ellipsis;
+  background: #FFF;
+  -webkit-box-shadow: 5px 5px 15px 5px rgb(0 0 0 / 10%);
+  box-shadow: 5px 5px 15px 5px rgb(0 0 0 / 10%);
+  -webkit-animation: appearance 0.8s;
+          animation: appearance 0.8s;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+}
+
+/*****menu slide animation****/
+
+@-webkit-keyframes appearance {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes appearance {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+#delay1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+#delay-2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+#delay3 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+#delay-4 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+#delay5 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+#delay-6 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+#delay7 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+#delay8 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+#delay9 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+#delay10 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.menuItem-header{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  margin-left: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.title_meal{
+  margin: 10px 5px 5px 2px;
+  padding-left: 10px 0 0 0;
+  font-weight: 700;
+  font-size: 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: start;
+  line-height: 0.9;
+  padding-right: 40px;
+}
+
+.menu_part .btn-delay0 .meal_desc,
+.menu_part .btn-delay1 .meal_desc,
+.menu_part .btn-delay2 .meal_desc {
+  font-size: 13px;
+  margin: 5px 0px 0px 0;
+  text-align: start;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: grey;
+  padding-right: 40px;
+}
+.price{
+  font-weight: bold;
+}
+.menu_part .btn-delay0 .confirmation,
+.menu_part .btn-delay1 .confirmation,
+.menu_part .btn-delay2 .confirmation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 80px;
+  position: absolute;
+  top: 0;
+  right: -80px;
+  background-color: #99e2d0;
+}
+
+
+
+.menu_part .btn-delay0 .confirmation .fas,
+.menu_part .btn-delay1 .confirmation .fas,
+.menu_part .btn-delay2 .confirmation .fas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+  top: 20px;
+  right: 30px;
+  color: white;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: -webkit-transform 600ms ease;
+  transition: -webkit-transform 600ms ease;
+  transition: transform 600ms ease;
+  transition: transform 600ms ease, -webkit-transform 600ms ease;
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+  font-size: 1.2em;
+}
+.menu_part .btn-delay0 .confirmation .fa-check-circle,
+.menu_part .btn-delay1 .confirmation .fa-check-circle,
+.menu_part .btn-delay2 .confirmation .fa-check-circle {
+  width: 30px;
+  height: 30px;
+}
+.menu_part .btn-delay0:hover .price,
+.menu_part .btn-delay1:hover .price,
+.menu_part .btn-delay2:hover .price {
+  -webkit-transform: translate(-322%);
+          transform: translate(-322%);
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+}
+.menu_part .btn-delay0:hover .confirmation,
+.menu_part .btn-delay1:hover .confirmation,
+.menu_part .btn-delay2:hover .confirmation {
+  height: 70px;
+  display: block;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+}
+.menu_part .btn-delay0:hover .confirmation .check,
+.menu_part .btn-delay1:hover .confirmation .check,
+.menu_part .btn-delay2:hover .confirmation .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 73px;
+  width: 89px;
+}
+.menu_part .btn-delay0:hover .confirmation .fas,
+.menu_part .btn-delay1:hover .confirmation .fas,
+.menu_part .btn-delay2:hover .confirmation .fas {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+          
+}
+@-webkit-keyframes checked-slide {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+@keyframes checked-slide {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.order_btn{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.order_btn button{
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: -o-linear-gradient(top, #ff79da, #9356dc);
+  background: linear-gradient(180deg, #ff79da, #9356dc);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  color: white;
+  margin: 10px 0;
+  cursor: pointer;
+  -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+}
